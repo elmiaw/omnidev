@@ -1,0 +1,38 @@
+{
+  "name": "omnidev",
+  "version": "1.0.0",
+  "description": "The Ultimate Modular Framework for React Development",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "omni": "index.js",
+    "omnimerge": "omnimerge.js",
+    "omnifab": "omnifabricator.js"
+  },
+  "files": [
+    "index.js",
+    "omnimerge.js",
+    "omnifabricator.js"
+  ],
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "generator",
+    "fabricator",
+    "merger"
+  ],
+  "author": "Grandmaster Architect",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "execa": "^8.0.1",
+    "fs-extra": "^11.3.3"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
