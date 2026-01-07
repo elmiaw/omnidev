@@ -623,7 +623,7 @@ async function main(manualArgs) {
     await runMerger(cwd, true);
     process.exit(0);
   }
-  if (command === "fab" || command === "fabricator" || command === "gc") {
+  if (command === "fab" || command === "fabricator") {
     await runFabricator(cwd, true);
     process.exit(0);
   }
@@ -640,17 +640,22 @@ async function main(manualArgs) {
 
   // 3. Already in Project? Show Help instead of Dashboard
   if (isProjectRoot) {
-    await printHeader("OMNIDEV ACTIVE", { PROJECT: path.basename(cwd) });
-    console.log(theme.text("   You are inside an OmniDev project."));
+    await printHeader("OMNIBUILD", { PROJECT: path.basename(cwd) });
+    console.log(theme.text("   Welcome to OmniBuild Project."));
     console.log("");
     console.log(`   ${theme.primary("Available Commands:")}`);
     console.log(
-      `   ${theme.accent("npx omnidev fab")}    ${theme.muted(
-        "Create components, pages, hooks"
+      `   ${theme.accent("omni")}    ${theme.muted(
+        "Install Project & Open Dashboard"
       )}`
     );
     console.log(
-      `   ${theme.accent("npx omnidev merge")}  ${theme.muted(
+      `   ${theme.accent("omni fab")}    ${theme.muted(
+        "Create components, pages, hooks, etc"
+      )}`
+    );
+    console.log(
+      `   ${theme.accent("omni merge")}  ${theme.muted(
         "Combine files for LLM context"
       )}`
     );

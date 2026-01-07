@@ -8,7 +8,7 @@
 
 <p>If you just want to create a new proje ct once without cluttering your system:</p>
 
-<pre>npx omnibuild init</pre>
+<pre>npx omni init</pre>
 
 <br>
 <b>Method 2: Global Install <i>(Recommended for Architects)</i></b>
