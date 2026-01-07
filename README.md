@@ -6,7 +6,7 @@
 <br>
 <b>Method 1: One-Time Use <i>(No Install)</i></b>
 
-<p>If you just want to create a new proje ct once without cluttering your system:</p>
+<p>If you just want to create a new project once without cluttering your system:</p>
 
 <pre>npx omni init</pre>
 
