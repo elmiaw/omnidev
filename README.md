@@ -1,115 +1,182 @@
+<div align="center">
+
 OmniBuild
 
-OmniBuild is an all-in-one CLI Toolkit (Command Line Interface) for modern React developers. More than just a boilerplate, it is an ecosystem to Scaffold, Fabricate, and Merge code for AI contexts.
+The Ultimate Modular React Framework
 
-⚡ Installation & Usage
+"Forged for the Architects of the Digital Realm."
 
-    Method 1: One-Time Use (No Install)
-    If you just want to create a new project once without cluttering your system:
+Features • Installation • Usage • Structure • Troubleshooting
 
-        npx omnibuild init
+</div>
 
-    Method 2: Global Install (Recommended for Architects)
-    For full access to Fabricator and Merger features in any terminal (Power User):
+OmniBuild is an all-in-one CLI Toolkit engineered for modern React developers. More than just a boilerplate, it is a complete ecosystem to Scaffold robust architectures, Fabricate components instantly, and Merge code contexts for AI analysis.
 
-s
+⚡ Installation
+
+Method 1: Global Install (Recommended)
+
+Unlock the full power of the CLI (omni, omnifab, omnimerge) in any terminal directory.
+
 Windows:
 
-            npm install -g omnibuild
+npm install -g omnibuild
 
-        macOS / Linux:
-        (Often requires sudo access)
+macOS / Linux:
+(May require administrator privileges)
 
-            sudo npm install -g omnibuild
+sudo npm install -g omnibuild
 
-    Once installed, you have access to 3 powerful commands in your terminal:
+Method 2: On-Demand Execution
 
-        omni        : Main command (Installer & Dashboard).
-        omnifab     : Component/feature generator (Fabricator).
-        omnimerge   : File merger for LLM Context (Merger).
+Execute without installing dependencies globally:
+
+npx omnibuild init
+
+🎮 Command Reference
+
+Command
+
+Alias
+
+Function
+
+Description
+
+omni
+
+omni init
+
+Installer
+
+Launches the Fortress Edition installer to scaffold a new React+Vite project.
+
+omnifab
+
+omni fab
+
+Fabricator
+
+Opens the interactive CLI to generate components, features, hooks, and stores.
+
+omnimerge
+
+omni merge
+
+Merger
+
+Aggregates your codebase into a single omni-context.txt file for AI/LLM analysis.
 
 🚀 Key Features
 
-    1. The Installer (Fortress Edition)
+1. The Installer (Fortress Edition)
 
-        Creates a React + Vite project with "Bulletproof" architecture.
-        Usage:
+Scaffolds a battle-tested React architecture designed for scalability.
 
-            omni
-            # or
-            omni init
+Execution:
 
-        What do you get?
-            Core            : React 18, Vite 5, TailwindCSS 3.4.
-            State & Logic   : Zustand, TanStack Query, Axios (configured).
-            Architecture    : Modular src/features folder structure.
-            UI Kit          : Shadcn-like setup with class-variance-authority.
-            Security        : Auto .env generation, deployment-ready Dockerfile.
-            Testing         : Vitest & React Testing Library pre-installed.
+omni
 
-    2. The Fabricator (Code Generator)
+Architecture Highlights:
 
-        Don't waste time creating files manually. Use Fabricator to generate components, pages, hooks, or stores complete with Unit Tests.
+⚛️ Core: React 18 + Vite 5 + TailwindCSS 3.4
 
-        Usage:
-        Enter your project folder, then type:
+🧠 State: Zustand (Global) + TanStack Query (Server)
 
-        omnifab
-        # or
-        omni fab
+🛡️ Security: Auto .env generation & Dockerfile included
 
-        Capabilities:
+🧩 Modular: Pre-configured src/features architecture
 
-            Visual Menu     : Interactive navigation with keyboard arrows.
-            Auto Test       : Automatically creates .test.jsx file for every component.
-            Smart Scoping   : Can choose to create components in src/components (Global) or inside src/features (Modular).
-            Clean Code      : Generates clean, industry-standard code.
+🧪 Testing: Vitest & React Testing Library pre-installed
 
-    3. The Merger (AI Context Builder)
+2. The Fabricator (Code Generator)
 
-        Want to ask ChatGPT/Claude about your entire codebase? Copy-pasting one by one is slow. Merger will combine all your code into a single text file.
+An interactive CLI tool to generate standardized code assets.
 
-        Usage:
+Execution:
+(Run this inside your project root)
 
-        omnimerge
-        # or
-        omni merge
+omnifab
 
-        Advantages:
+Capabilities:
 
-            Smart Filter    : Automatically ignores node_modules, .env, and other secret files.
-            Security        : Prevents API Key leakage.
-            Performance     : Uses streams to handle thousands of files quickly.
-            Output          : Generates omni-context.txt file ready for AI upload.
+Visual Interface: Navigate using keyboard arrows.
 
-📂 Project Structure (OmniBuild Standard)
+Auto-Testing: Automatically generates .test.jsx alongside components.
 
-        When you create a project with omni, your folder structure will look like this:
+Smart Scoping: Choose between Global (src/components) or Feature-scoped (src/features/...) creation.
 
-        src/
-        ├── components/ # Global UI Components (Button, Input, etc.)
-        ├── features/ # Modular Features (Auth, Dashboard, Product)
-        │ └── auth/
-        │ ├── components/
-        │ ├── routes/
-        │ └── api/
-        ├── hooks/ # Global Custom Hooks
-        ├── lib/ # Library Configuration (Axios, Utils)
-        ├── pages/ # Main Pages (Routing)
-        ├── store/ # Global State (Zustand)
-        └── types/ # TypeScript Definitions (if using TS)
+3. The Merger (AI Context Builder)
+
+Optimized for "Chat with Codebase" workflows. Combines relevant source code into a token-efficient text file.
+
+Execution:
+
+omnimerge
+
+Features:
+
+🚫 Smart Ignore: Automatically excludes node_modules, .env, .git, and lockfiles.
+
+🔒 Security Guard: Prevents accidental leakage of secrets/API keys.
+
+⚡ Stream Processing: Handles large codebases with minimal memory footprint.
+
+📂 Project Structure
+
+OmniBuild enforces a Feature-First Architecture to maintain sanity in large applications.
+
+src/
+├── components/ # 🌐 Global UI Components (Button, Input, Modal)
+│ └── ui/ # Primitive UI elements
+├── features/ # 🚀 Modular Feature Domains
+│ └── auth/ # Example: Auth Feature
+│ ├── api/ # - API calls specific to Auth
+│ ├── components/# - Components specific to Auth
+│ └── routes/ # - Routes specific to Auth
+├── hooks/ # ⚓ Global Custom Hooks
+├── lib/ # 🛠️ Configuration (Axios, Utils, Constants)
+├── pages/ # 📄 Page Composition (Route Views)
+├── store/ # 📦 Global State Stores (Zustand)
+└── types/ # 📐 TypeScript Definitions
 
 🛠 Troubleshooting
 
-        Q: omni command not found after install?
-        A: Ensure global npm folder is in your computer's PATH. Or try restarting the terminal.
+Note: If you encounter permission errors, always verify your Node.js and NPM permissions.
 
-        Q: "EPERM" error during install on Windows?
-        A: Try running terminal as Administrator, or use npm install -g omnibuild --force.
+<details>
+<summary><strong>Error: Command omni not found</strong></summary>
 
-        Q: "EACCES" error during install on macOS/Linux?
-        A: You need administrator permissions. Use the sudo command prefix:
-        sudo npm install -g omnibuild
+Ensure your global NPM bin folder is in your system's PATH variable.
 
-Cheers,
-Omni Developer Team
+Windows: Check Environment Variables.
+
+Mac/Linux: Check .bashrc or .zshrc.
+
+</details>
+
+<details>
+<summary><strong>Error: EPERM / Permission Denied (Windows)</strong></summary>
+
+Try running your terminal as Administrator or force the installation:
+
+npm install -g omnibuild --force
+
+</details>
+
+<details>
+<summary><strong>Error: EACCES (macOS/Linux)</strong></summary>
+
+Use sudo to grant write access to global directories:
+
+sudo npm install -g omnibuild
+
+</details>
+
+<div align="center">
+
+Forged by Grandmaster Architect
+
+Report Bug • Request Feature
+
+</div>
