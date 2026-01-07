@@ -1,12 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * MODULE: OMNIFABRICATOR (THE ROYAL ARCHITECT)
- * AUTHOR: GRANDMASTER ARCHITECT
- * THEME: ROYAL LIGHT MODE (High Contrast / Clean Protocol)
- * NOTE: Advanced scaffolding engine with visual feedback, governance, data metrics, and TEST SUITES.
- */
-
 import chalk from "chalk";
 import fs from "fs-extra";
 import path from "path";
@@ -961,8 +954,8 @@ export const runFabricator = async (
     // --- HOOK FABRICATION (UPGRADED) ---
     else if (choice === "HOOK") {
       const scopeOptions = [
-        { value: "GLOBAL", label: "🌐  Global Logic (src/hooks)" },
-        { value: "FEATURE", label: "🚀  Feature Logic (src/features)" },
+        { value: "GLOBAL", label: "🌐  Global | .src/hooks" },
+        { value: "FEATURE", label: "🚀  Feature | .src/features" },
         { value: "BACK", label: "⬅️   Return" },
       ];
       const scope = await renderMenu("HOOK_SCOPE", scopeOptions, {

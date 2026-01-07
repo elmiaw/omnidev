@@ -1,19 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * REWRITTEN BY: GRANDMASTER ARCHITECT
- * IDENTITY: OMNIMERGE STANDALONE (HYBRID MODULE)
- * THEME: ROYAL LIGHT MODE / HIGH CONTRAST
- * STATUS: AUDITED & HARDENED
- * AUDIT FIXES:
- * 1. [SECURITY] Filename Sanitization (No path traversal)
- * 2. [SECURITY] Sensitive File Detection (.env, keys, credentials)
- * 3. [SECURITY] File Size Limits (10MB single, 50MB total)
- * 4. [STABILITY] Parallel File Counting (Promise.all)
- * 5. [STABILITY] Graceful Degradation (Continue on error)
- * 6. [FIX] Added missing printHeader function
- */
-
 import chalk from "chalk";
 import fs from "fs-extra";
 import path from "path";

@@ -1,21 +1,5 @@
 #!/usr/bin/env node
 
-/**
- * REWRITTEN BY: SENIOR UX DEV & GRANDMASTER ARCHITECT
- * THEME: DAYLIGHT HACKER / CLEAN STREAM PROTOCOL
- * FEATURES: INSTALLER (FORTRESS EDITION) ONLY
- * UPDATE: Removed Dashboard (Simplified Flow)
- * AUDIT FIXES:
- * 1. Project Name Validation
- * 2. Directory Exists Check
- * 3. Git Init & First Commit
- * 4. ESLint + Prettier Config
- * 5. Env Template (+ Auto .env creation)
- * 6. Component Library & Tests
- * 7. Enhanced Scripts
- * 8. Vite Config Alias Fix
- */
-
 import { execa } from "execa";
 import chalk from "chalk";
 import fs from "fs-extra";
@@ -24,7 +8,6 @@ import { fileURLToPath } from "url";
 import readline from "readline";
 
 // --- MODULE IMPORTS ---
-// Kita masih import untuk CLI commands langsung (jika user pakai flag)
 import { runMerger } from "./omnimerge.js";
 import { runFabricator } from "./omnifabricator.js";
 
