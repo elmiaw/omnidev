@@ -1,6 +1,6 @@
 {
   "name": "omnibuild",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The Ultimate Modular Framework for React Development",
   "main": "index.js",
   "type": "module",
